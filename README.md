@@ -1,24 +1,49 @@
 # DevelopmentRibbon
 
-TODO: Write a gem description
+This gem shows a nice ribbon at the top corner of your page to indicate that you are using the development environment.
+The design is mostly based on the design of [Jeff Balogh](https://github.com/jbalogh/ribbons).
+
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'development_ribbon'
+    gem 'development_ribbon', group: :development
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
+Load the stylesheet by adding it to your application.html.erb.
 
-    $ gem install development_ribbon
+    <%= stylesheet_link_tag "development_ribbon" if Rails.env.development? %>
+
 
 ## Usage
+    
+Use the provided helper anywhere in your views to show your development ribbon:
 
-TODO: Write usage instructions here
+    <%= development_ribbon %>
+    
+I suggest you to place this helper directly after the body tag in your layout file.
+
+
+### Customisation
+
+You can provide a few options to the helper to style your ribbon. 
+
+    <%= development_ribbon position: :left, color: :green, text: "dev env" %>
+    
+This shows your ribbon on the top left corner on your page with green background and displaying the text "dev env".
+
+All possible options are:
+
+- position: left, right
+- color: white, red, green, darkblue, orange, gray
+- text: any text you want
+
+Furthermore you can show the ribbon regardless of the environment and use it for any purpose you intend to do. Just remove the development group of your Gemfile and include the stylesheet without the if-clause. Use the :text hash option to customise the text to show.
+
 
 ## Contributing
 
