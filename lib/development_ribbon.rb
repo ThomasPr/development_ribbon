@@ -1,5 +1,10 @@
 require "development_ribbon/version"
+require "development_ribbon/engine"
 
 module DevelopmentRibbon
-  # Your code goes here...
+  module ViewHelpers
+    def development_ribbon
+      raise "drin".inspect
+    end
+  end
 end
