@@ -1,9 +1,8 @@
 # DevelopmentRibbon
 
-This gem shows a nice ribbon at the top corner of your page to indicate that you are using the development environment.
-The design is mostly based on the design of [Jeff Balogh](https://github.com/jbalogh/ribbons).
+This gem shows a nice ribbon at the top corner of your page to indicate that you are using the development environment. The design is mostly based on the design of [Jeff Balogh](https://github.com/jbalogh/ribbons). 
 
-![Example Image](example_image.png)
+![Example Image](https://raw.github.com/ding280/development_ribbon/master/example_image.png)
 
 ## Installation
 
