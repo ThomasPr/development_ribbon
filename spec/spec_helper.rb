@@ -1,0 +1,1 @@
+require 'development_ribbon'
