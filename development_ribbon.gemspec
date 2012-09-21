@@ -8,9 +8,9 @@ Gem::Specification.new do |gem|
   gem.version       = DevelopmentRibbon::VERSION
   gem.authors       = ["Thomas Preißler"]
   gem.email         = ["thomas.preissler@gmx.de"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{Use a banner to indicate that you are using the development environment.}
+  gem.summary       = %q{Displays a banner at the top corner to indicate that your app is running in development environment.}
+  gem.homepage      = "https://github.com/ding280/development-ribbon"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
