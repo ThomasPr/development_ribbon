@@ -12,7 +12,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Displays a banner at the top corner to indicate that your app is running in development environment.}
   gem.homepage      = "https://github.com/ding280/development-ribbon"
 
-  gem.files         = Dir["{app,lib,vendor}/**/*"] + ["LICENSE", "Gemfile", "README.md", "CHANGELOG"]
+  gem.files         = Dir["{app,lib,vendor}/**/*"] + ["LICENSE.txt", "Gemfile", "README.md", "CHANGELOG"]
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
